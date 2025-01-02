@@ -1,0 +1,3 @@
+/todo-grpc-service/obj
+/todo-grpc-service/bin
+*.vs
