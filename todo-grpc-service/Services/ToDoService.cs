@@ -112,7 +112,7 @@ public class ToDoService : ToDoIt.ToDoItBase
     {
         if (request.Id <= 0)
         {
-            throw new RpcException(new Status(StatusCode.InvalidArgument, "Resource Index must be greater than 0"));
+            throw new RpcException(new Status(StatusCode.InvalidArgument, "Resource Id must be greater than 0"));
         }
 
         var toDoItem = await _dbContext.ToDoItems.FirstOrDefaultAsync(t => t.Id == request.Id);
